@@ -1,0 +1,39 @@
+<html>
+
+<head>
+	<style>
+		h2 {
+			color: blueviolet;
+			font-family: 'Lucida Sans';
+		}
+
+		button {
+			background-color: blueviolet;
+			border: 0;
+			border-radius: 20px;
+			padding: 10px 20px;
+			color: white;
+			font-size: 1em;
+		}
+	</style>
+</head>
+
+<body>
+	<h2>Offen</h2>
+	<button id="stateBtn">Click Me</button>
+	<img
+		src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeZ-ZP6_UqOjMzFgPAIOjZ4ysjQ8obGz6g9cMNJYG883ntYcCMyxCqI10djYPMuZE01DMJizV9OhdV0ykPEU6SXoVpOZFQuOGQsCIz8OOt&s=10">
+	<script>
+		// Logik, hier wird der DOM upgedated wenn ein klick auf den button mit id="stateBtn" passiert
+		document.getElementById('stateBtn').addEventListener('click', () => {
+
+			if (document.querySelector('h2').textContent === 'Offen') {
+				document.querySelector('h2').textContent = 'Geschlossen';
+			} else {
+				document.querySelector('h2').textContent = 'Offen';
+			}
+		});
+	</script>
+</body>
+
+</html>
